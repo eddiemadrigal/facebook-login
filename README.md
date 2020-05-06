@@ -1,5 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+URL: https://cranky-hamilton-48c471.netlify.app/
+
+Create your own.
+
+1. https://developers.facebook.com
+2. Create an account or log in
+3. Create and name your app
+4. type: facebook login
+5. Choose setup
+6. Web
+7. Next, next, next (until done)
+8. When finished, click settings
+9. Basic
+10. App Domain: localhost (until you publish)
+11. Copy your AppID
+12. npx create-react-app [project name]
+13. Create .env file that contains: HTTPS=true
+14. npm i react-facebook-login
+
+enjoy the ride :-)
+
 ## Available Scripts
 
 In the project directory, you can run:
