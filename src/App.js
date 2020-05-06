@@ -5,16 +5,30 @@ import './App.css';
 
 function App() {
 
-  let [isLoggedIn, setIsLoggedIn] = useState(false);
-  let [userID, setUserID] = useState('');
-  let [name, setName] = useState('');
-  let [email, setEmail] = useState('');
-  let [picture, setPicture] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userID, setUserID] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [picture, setPicture] = useState('');
 
   return (
     <div className="App">
-        <Facebook isLoggedIn={isLoggedIn} userID={userID} name={name} email={email} picture={picture} />
-        <FacebookLogout />
+        <Facebook 
+          isLoggedIn={isLoggedIn} 
+          setIsLoggedIn = {setIsLoggedIn}
+          userID={userID} 
+          setUserID = {setUserID}
+          name={name} 
+          setName = {setName}
+          email={email} 
+          setEmail = {setEmail}
+          picture={picture} 
+          setPicture = {setPicture}
+          />
+        <FacebookLogout
+          isLoggedIn = {isLoggedIn}
+          setIsLoggedIn = {setIsLoggedIn}
+        />
     </div>
   );
 }

@@ -1,9 +1,17 @@
 import React from 'react';
 import FacebookLogin from 'react-facebook-login';
 
-const Facebook = () => {
-
-  
+const Facebook = ({
+  isLoggedIn,
+  setIsLoggedIn,
+  userID,
+  setUserID,
+  name,
+  setName,
+  email,
+  setEmail,
+  picture,
+  setPicture }) => {
 
   let fbContent;
 
