@@ -44,7 +44,7 @@ const Facebook = ({
   } else {
     fbContent = (
       <FacebookLogin
-        appId="226770225415165"
+        appId={process.env.FACEBOOK_APP_ID}
         autoLoad={true}
         fields="name,email,picture"
         onClick={componentClicked}
